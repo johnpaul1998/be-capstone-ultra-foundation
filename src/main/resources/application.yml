@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://database-2.cr9yjdhvew93.ap-southeast-1.rds.amazonaws.com:5432/ultrafoundation_capstone
+    username: postgres
+    password: ultrafoundation
+  servlet:
+    multipart:
+      max-file-size: 50MB
+
+#       S3 config
+s3:
+  accessKey: AKIARNCTVXUGFNUOJLEU
+  secretKey: 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
+  bucketName: ultrafoundation-capstone
+
