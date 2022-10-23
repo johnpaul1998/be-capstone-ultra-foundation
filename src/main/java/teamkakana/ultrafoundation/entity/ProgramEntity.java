@@ -2,13 +2,17 @@ package teamkakana.ultrafoundation.entity;
 
 import lombok.*;
 import org.hibernate.Hibernate;
+import org.joda.time.DateTime;
 import teamkakana.ultrafoundation.config.SchemaConfiguration;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.sql.Date;
+import java.sql.Time;
 import java.time.ZonedDateTime;
 import java.util.Objects;
+import java.util.TimeZone;
 import java.util.UUID;
 
 @Getter
@@ -25,8 +29,8 @@ public class ProgramEntity {
     private String programName;
     private String description;
     private String imageLink;
-    private int programTime;
-    private int programDate;
+    private String programTime;
+    private String programDate;
     private float pointsToEarn;
     private float duration;
     private String location;
